@@ -10,7 +10,8 @@ export const Loader = styled.div`
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
   margin: 0 auto;
-  position: relative;
+  position: sticky;
+  z-index: 1;
   top: 200px;
 
   @-webkit-keyframes spin {
