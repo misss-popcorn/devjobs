@@ -1,5 +1,6 @@
 export const lightTheme = {
-    body: '#FFF',
+    body: '#F4F6F8',
+    backGround: 'white',
   }
   
   export const darkTheme = {
