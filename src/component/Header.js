@@ -41,7 +41,7 @@ const Content = styled.div`
   display: flex;
   position: absolute;
   width: 100%;
-  justify-content: space-around;
+  justify-content: flex-start;
 
   @media (min-width: 1281px) {
     margin-top: 44px;
@@ -63,18 +63,19 @@ const Title = styled.span`
   color: white;
   font-size: 32px;
   @media (min-width: 1281px) {
-    position: relative;
-    margin-left: -22%;
+    margin-left: 150px;
   }
 
   @media (min-width: 1025px) and (max-width: 1280px) {
-    position: relative;
-    margin-left: -22%;
+    margin-left: 150px;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
-    position: relative;
-    margin-left: -25%;
+    margin-left: 40px;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-left: 40px;
   }
 `;
 
@@ -97,18 +98,23 @@ const MoonIcon = styled.span`
 
 const Switch = styled.div`
 @media (min-width: 1281px) {
-  position: relative;
-  margin-left: -15%;
+  position: absolute;
+  right: 150px;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  position: relative;
-  margin-left: -15%;
+  position: absolute;
+  right: 150px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  position: relative;
-  margin-right: -25%;
+  position: absolute;
+  right: 40px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  position: absolute;
+  right: 40px;
 }
 `
 
