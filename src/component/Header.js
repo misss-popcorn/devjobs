@@ -20,6 +20,7 @@ const Box = styled.header`
     height: 160px;
     background: url(${desktopHeader}) no-repeat center center;
   }
+
   @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     height: 136px;
     background: url(${tabletHeader}) no-repeat center center;
@@ -61,6 +62,20 @@ const Content = styled.div`
 const Title = styled.span`
   color: white;
   font-size: 32px;
+  @media (min-width: 1281px) {
+    position: relative;
+    margin-left: -22%;
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    position: relative;
+    margin-left: -22%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    position: relative;
+    margin-left: -25%;
+  }
 `;
 
 const SunIcon = styled.span`
@@ -80,16 +95,33 @@ const MoonIcon = styled.span`
   vertical-align: bottom;
 `;
 
+const Switch = styled.div`
+@media (min-width: 1281px) {
+  position: relative;
+  margin-left: -15%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  position: relative;
+  margin-left: -15%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  position: relative;
+  margin-right: -25%;
+}
+`
+
 export const Header = ({ toggleTheme }) => {
   return (
     <Box>
       <Content>
         <Title>devjobs</Title>
-        <div className="switch">
+        <Switch>
           <SunIcon></SunIcon>
           <ToggleSwitch toggle={toggleTheme} />
           <MoonIcon></MoonIcon>
-        </div>
+        </Switch>
       </Content>
     </Box>
   );
